@@ -12,6 +12,7 @@ function palindrome(string) {
 
 	return false;
 
+	// replace for a regexp
 	function cleanString(str) {
 		str = str.replaceAll(" ", "");
 		str = str.replaceAll(",", "");
