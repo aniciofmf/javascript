@@ -1,4 +1,5 @@
-// In this case Object.is() is being used to compare against -0 & NaN and also avoid comparing non-primitive types with ==
+/* In this case Object.is() is being used to compare against -0 & NaN 
+and also avoid comparing non-primitive types with == or === */
 
 function findAll(arg, array) {
 	let res = [];
