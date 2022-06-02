@@ -1,3 +1,1 @@
-# Javascript
-
-Working out with some js's concepts
+Putting some js's concepts in practice

@@ -21,6 +21,26 @@ printRecords(currentEnrollment);
 console.log("----");
 remindUnpaid(currentEnrollment);
 
+/*
+	Bob (664): Not Paid
+	Henry (105): Not Paid
+	Sarah (375): Paid
+	Suzy (410): Paid
+	----
+	Bob (664): Not Paid
+	Frank (313): Paid
+	Henry (105): Not Paid
+	Mary (502): Paid
+	Peter (250): Paid
+	Sarah (375): Paid
+	Suzy (410): Paid
+	----
+	Bob (664): Not Paid
+	Henry (105): Not Paid
+*/
+
+// ********************************
+
 function printRecords(recordIds) {
 	var records = recordIds.map(getStudentFromId);
 
