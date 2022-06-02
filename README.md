@@ -1,1 +1,1 @@
-Putting some js's concepts in practice
+JavaScript random stuff
