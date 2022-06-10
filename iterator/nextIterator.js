@@ -14,3 +14,4 @@ const iteratorWithNext = nextIterator(array3);
 console.log(iteratorWithNext.next()); // -> should log 1
 console.log(iteratorWithNext.next()); // -> should log 2
 console.log(iteratorWithNext.next()); // -> should log 3
+console.log(iteratorWithNext.next());
