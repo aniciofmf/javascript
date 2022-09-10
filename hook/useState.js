@@ -17,7 +17,7 @@ const Main = (() => {
 		return [hook[closureIndex], setState];
 	};
 
-	const useEffect = (cb, dependencies) => {
+	const useEffect = (cb, dependencies = []) => {
 		cb();
 	};
 
