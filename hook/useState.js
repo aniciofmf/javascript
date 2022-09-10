@@ -4,13 +4,11 @@ const Main = (() => {
 	let hook = [];
 	let hookIndex = 0;
 
-	const useState = (initialValue) => {
+	const useState = (initialValue = 0) => {
 		const closureIndex = hookIndex;
 		hookIndex++;
 
-		if (!hook[closureIndex]) {
-			hook[closureIndex] = initialValue;
-		}
+		hook[closureIndex] = initialValue;
 
 		const setState = (newValue) => {
 			hook[closureIndex] = newValue;
@@ -31,16 +29,18 @@ const Main = (() => {
 
 const { useState, clearIndex } = Main;
 
-const testComponent = () => {
-	const [counter, setCounter] = useState(0);
+const testComponent = (value) => {
+	const [counter, setCounter] = useState(value);
+
+	setCounter(value);
 
 	console.log(counter);
-
-	setCounter(10);
 };
 
 testComponent();
 clearIndex();
-testComponent();
-
+testComponent(20);
+clearIndex();
+testComponent(100);
+clearIndex();
 /* Conclusion: long live to the closure pattern (?) */
