@@ -17,17 +17,22 @@ const Main = (() => {
 		return [hook[closureIndex], setState];
 	};
 
+	const useEffect = (cb, dependencies) => {
+		cb();
+	};
+
 	const clearIndex = () => {
 		hookIndex = 0;
 	};
 
 	return {
 		useState,
+		useEffect,
 		clearIndex,
 	};
 })();
 
-const { useState, clearIndex } = Main;
+const { useState, clearIndex, useEffect } = Main;
 
 const testComponent = (value) => {
 	const [counter, setCounter] = useState(value);
@@ -35,6 +40,10 @@ const testComponent = (value) => {
 	setCounter(value);
 
 	console.log(counter);
+
+	useEffect(() => {
+		console.log("hi");
+	});
 };
 
 testComponent();
