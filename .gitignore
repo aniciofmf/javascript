@@ -1,6 +1,4 @@
 .vscode/
-*.code-*
-test.js
 destructuring*
 data-structures/
 event/
@@ -9,5 +7,5 @@ todo/
 nodejs/
 hr/
 ts/
-*.js
-*.html
+
+test.js
