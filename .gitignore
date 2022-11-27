@@ -7,5 +7,6 @@ todo/
 nodejs/
 hr/
 ts/
-
+*.js
+*.html
 test.js
