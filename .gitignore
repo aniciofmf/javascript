@@ -4,3 +4,10 @@ test.js
 destructuring*
 data-structures/
 event/
+css/
+todo/
+nodejs/
+hr/
+ts/
+*.js
+*.html
